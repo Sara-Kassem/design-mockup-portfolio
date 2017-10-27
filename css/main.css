@@ -1,0 +1,343 @@
+/*--------------------------------------------------*/
+/*					add custom fonts				*/
+/*--------------------------------------------------*/
+
+@font-face {
+    font-family: fontAwesome-woff;
+
+    src: url(../fonts/fontawesome-webfont.woff);
+}
+
+@font-face {
+    font-family: fontAwesome-woff2;
+
+    src: url(../fonts/fontawesome-webfont.woff2);
+}
+
+/*--------------------------------------------------*/
+/*			apply styles to all elements			*/
+/*--------------------------------------------------*/
+
+* {
+	padding: 0;
+
+	margin: 0;
+
+	font-family: Arial, Helvetica, sans-serif, fontAwesome-woff, fontAwesome-woff2;
+
+	-webkit-box-sizing: border-box;
+
+	-moz-box-sizing: border-box;
+
+	-ms-box-sizing: border-box;
+
+	-o-box-sizing: border-box;
+
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 20px 20px 35px 20px;
+}
+
+/*--------------------------------------------------*/
+/*				start header styling				*/
+/*--------------------------------------------------*/
+
+header {
+	padding: 20px 0;
+
+	position: relative;
+}
+
+.sk-logo {
+	height: 60%;
+
+/*--------------------------------------------------*/
+/*		for centering the logo vertically			*/
+/*--------------------------------------------------*/
+	position: absolute;
+
+	top: 50%;
+
+	-webkit-transform: translate(0, -50%);
+
+	-moz-transform: translate(0, -50%);
+
+	-ms-transform: translate(0, -50%);
+
+	-o-transform: translate(0, -50%);
+
+	transform: translate(0, -50%);
+}
+
+.name {
+	font: normal 100 2em/1.2 Arial, Helvetica, sans-serif;
+
+	text-align: right;
+
+	color: #27aae1;
+}
+
+.headline {
+	font: normal 100 1.5em/1 Arial, Helvetica, sans-serif;
+
+	text-align: right;
+
+	color: #2d3c49;
+}
+
+/*--------------------------------------------------*/
+/*				end header styling					*/
+/*--------------------------------------------------*/
+
+.main-image {
+	width: 100%;
+
+	height: auto;
+
+	max-width: 100%;
+
+	display: block;
+
+	padding: 20px 0;
+
+	border-bottom: 3px solid #7d97ad;
+
+	border-top: 3px solid #7d97ad;
+}
+
+/*--------------------------------------------------*/
+/*			start featured work styling				*/
+/*--------------------------------------------------*/
+
+.featured-heading {
+	color: #27aae1;
+
+	font-size: 1.3em;
+
+	margin: 20px 0;
+}
+
+.featured-work {
+/*--------------------------------------------------*/
+/*			for making a grid of samples			*/
+/*--------------------------------------------------*/
+
+	display: -webkit-flex;
+
+	display: -moz-flex;
+
+	display: -ms-flex;
+
+	display: -o-flex;
+
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: space-between;
+}
+
+.work-sample {
+	margin-bottom: 30px;
+
+	text-align: center;
+}
+
+.work-sample:last-of-type {
+	margin: 0;
+}
+
+.sample-image {
+	width: 100%;
+}
+
+.sample-caption {
+	padding: 10px;
+
+	margin: 20px 0 0;
+
+/*--------------------------------------------------*/
+/*			for making a gradient border			*/
+/*--------------------------------------------------*/
+
+	border: 3px solid transparent;
+
+	border-image: linear-gradient(to bottom right, #ff4577 0%,#4a68e9 0%, #fd1fbe 100%, #774df0 100%);
+
+	border-image-slice: 1;
+}
+
+.sample-name {
+	color: #27aae1;
+}
+
+.sample-links {
+	text-decoration: none;
+
+	color: #2d3c49;
+
+	font-size: 14px;
+}
+
+.sample-links:hover {
+	cursor: auto;
+}
+
+/*--------------------------------------------------*/
+/*			end featured work styling				*/
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/*				start footer styling				*/
+/*--------------------------------------------------*/
+
+footer {
+	background-color: #7d97ad;
+
+	padding: 20px;
+}
+
+.copyright {
+	color: #fff;
+
+	font-size: 11px;
+
+	text-align: center;
+
+	padding: 10px 0 0;
+}
+
+.social-icons {
+	display: -webkit-flex;
+
+	display: -moz-flex;
+
+	display: -ms-flex;
+
+	display: -o-flex;
+
+	display: flex;
+
+	justify-content: space-between;
+
+	width: 50%;
+
+	margin: 0 auto;
+}
+
+.social-links {
+	color: #fff;
+}
+
+/*--------------------------------------------------*/
+/*				end footer styling					*/
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+/*				Large Mobiles Layout				*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 425px) {
+
+	.container {
+		margin: 40px;
+	}
+
+	.name {
+		font-size: 2.5em;
+	}
+
+	.headline {
+		font-size: 1.5em;
+	}
+}
+
+/*--------------------------------------------------*/
+/*				Medium Screen layout				*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 620px) {
+
+	.name {
+		font-size: 3.5em;
+	}
+
+	.headline {
+		font-size: 2.5em;
+	}
+
+	.featured-heading {
+		font-size: 2em;
+	}
+
+	.featured-work {
+		flex-direction: row;
+
+		flex-wrap: wrap;
+	}
+
+	.work-sample {
+		width: 46%;
+
+		margin-left: 20px;
+	}
+
+	.work-sample:first-of-type {
+		margin: 0;
+	}
+
+	.work-sample:last-of-type {
+		margin: 0 auto;
+	}
+
+	.sample-name {
+		font-size: 1.25em;
+	}
+
+	.copyright {
+		font-size: 15px;
+	}
+
+	.social-icons {
+		width: 40%;
+	}
+
+	.social-links {
+		font-size: 2em;
+	}
+}
+
+/*--------------------------------------------------*/
+/*				Large Screen layout					*/
+/*--------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+
+	.name {
+		font-size: 4.5em;
+	}
+
+	.headline {
+		font-size: 3.5em;
+	}
+
+	.work-sample {
+		width: 30%;
+
+		margin: 0;
+	}
+
+	.work-sample:last-of-type {
+		margin: 0;
+	}
+
+	.social-icons {
+		width: 30%;
+	}
+}
